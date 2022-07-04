@@ -292,18 +292,10 @@ main{
     width: 100%;
     height: 100%;
 }
-#my-arrow-next, #my-arrow-next1{
-    left: -20px;
-}
-#my-arrow-prev, #my-arrow-prev1{
-    right: -20px;
-}
 .wrapper-slider{
     position: relative;
 }
 .slider-arrow{
-    background-color: white;
-    border: 1px solid rgb(206, 206, 206);
     width: 35px;
     height: 35px;
     border-radius: 50%;

@@ -22,23 +22,23 @@ button{
 li{
     list-style-type: none;
 }
-main{
+.main-section{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 15px;
 }
-.main-info{
+.section-info{
     width: 38%;
 }
-.main-cards{
+.section-cards{
     margin-left: 6%;
     width: 46%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.main-card{
+.section-card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,30 +48,41 @@ main{
     background-color: rgb(185, 0, 185);
     color: white;
 }
-.main-card > h2{
-    font-size: 3.5em;
+.section-cards > .country{
+    background: radial-gradient(67.44% 67.44% at 28.89% 32.56%, #BE71F0 0%, #9B38DC 100%);
 }
-.main-title{
+.section-card + .shop{
+    background: radial-gradient(38.37% 38.37% at 86.68% 61.63%, #BE71F0 0%, #9B38DC 100%);
+}
+.section-card + .product{
+    background: radial-gradient(95.16% 95.16% at 90.45% 4.84%, #BE71F0 0%, #9B38DC 100%);
+
+}
+.section-card > h2{
+    font-size: 3.5em;
+    margin-top: .3em;
+}
+.section-title{
     font-size: 3em;
 }
-.main-title > span{
+.section-title > span{
     color: rgb(185, 0, 185);
 }
-.main-description{
+.section-description{
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 17px;
     line-height: 1.6;
 }
-.main-list{
+.section-list{
     margin-left: 18px;
 }
-.main-list > li{
+.section-list > li{
     position: relative;
     font-size: 17px;
     line-height: 1.6;
 }
-.main-list > li::before{
+.section-list > li::before{
     position: absolute;
     left: -18px;
     top: 0;
@@ -141,7 +152,7 @@ main{
     border-top: none;
 }
 .offers__slider-item > .offers__wrapper-price{
-    margin-top: .4em;
+    margin-top: .8em;
 }
 .offers__wrapper-price{
     display: flex;
@@ -156,7 +167,7 @@ main{
 }
 .offers-title{
     font-size: 0.88em;
-    margin-bottom: .4em;
+    margin-bottom: .8em;
 }
 .orffers-type{
     font-size: 0.9em;
@@ -175,22 +186,27 @@ main{
 }
 .offers__slider-favorite{
     position: absolute;
-    content: '';
     right: 0;
     top: 0;
-    width: 25px;
-    height: 25px;
-    background-color: black;
+    width: 20px;
+    height: 20px;
     border-radius: 4px;
+}
+.offers__slider-favorite > img{
+    width: 100%;
+    height: 100%;
 }
 .offers__button-order{
     width: 50px;
     height: 50px;
-    background-color: red;
+}
+.offers__button-order > img{
+    width: 100%;
+    height: 100%;
 }
 .offers .slick-track{
     display: flex;
-    column-gap: 40px;
+    column-gap: 25px;
 }
 .wrapper-title{
     display: flex;
@@ -217,11 +233,52 @@ main{
 .brend-helf{
     height: 50%;
     width: 100%;
-    background-color: purple;
+    border: 1px solid gray;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .popular-slider .slick-track{
     display: flex;
     column-gap: 20px;
+}
+.slider-arrow > img{
+    width: 100%;
+    height: 100%;
+}
+#my-arrow-next, #my-arrow-next1{
+    right: -30px;
+}
+#my-arrow-prev, #my-arrow-prev1{
+    left: -30px;
+}
+.wrapper-slider{
+    position: relative;
+}
+.slider-arrow{
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 10;
+    position: absolute;
+    font-size: 15px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    color: #464646;
+}
+main{
+    gap: 30px;
+    display: flex;
+    width: 90%;
+    margin: auto;
 }
 .slider-arrow{
     position: absolute;
@@ -258,4 +315,22 @@ main{
     align-items: center;
     top: calc(50% - 1rem - 5px);
     color: #464646;
+}
+.main__banner-slider, .main__product-day--slider{
+    position: relative;
+}
+.main__banner-slider{
+    width: 72%;
+    background-color: orangered;
+    height: 450px;
+}
+.main__product-day--slider{
+    width: 28%;
+    background-color: purple;
+}
+.main__product-day__header{
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }

@@ -62,9 +62,6 @@ li{
     font-size: 3.5em;
     margin-top: .3em;
 }
-.section-title{
-    font-size: 3em;
-}
 .section-title > span{
     color: rgb(185, 0, 185);
 }
@@ -100,7 +97,7 @@ li{
 }
 .offers-list{
     padding-bottom: 10px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #C4C4C4;
     display: flex;
     margin: 1em 0 1.5em 0;
 }
@@ -109,7 +106,7 @@ li{
 }
 .offers-list > li > a{
     font-weight: 400;
-    color: gray;
+    color: #C4C4C4;
     font-size: 15px;
 }
 .offers-list > .active{
@@ -221,6 +218,9 @@ li{
     font-size: 1.6em;
     margin-right: 1em;
 }
+.section-info > .section-title{
+    font-size: 2.7rem;
+}
 .wrapper-title > .button-all{
     padding: 6px 10px;
     border: 2px solid rgb(185, 0, 185);
@@ -237,7 +237,7 @@ li{
 .brend-helf{
     height: 50%;
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid #C4C4C4;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -376,4 +376,67 @@ main{
     color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
     font-weight: 600;
+}
+.main-specifications .title > span{
+    color: rgb(185, 0, 185);
+}
+.main-specifications .title{
+    font-size: 2.7rem;
+    text-align: center;
+}
+.main-specifications .wrapper-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 1.2rem;
+    column-gap: 15px;
+
+}
+.specification__wrapper-card{
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #C4C4C4;
+}
+.specification__wrapper-card > .card-item{
+    display: flex;
+    align-items: center;
+}
+.specification__wrapper-card > img{
+    height: 50px;
+}
+.card-item__description{
+    font-size: 13px;
+    margin-left: 15px;
+    color: #565656;
+}
+.card-item__description > b{
+    font-size: 16px;
+    color: black;
+}
+.main-banner__title-text{
+    font-size: 3.5rem;
+    color: #fff;
+}
+.main-banner-button{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 25px;
+}
+.main-banner-description{
+    color: #fff;
 }

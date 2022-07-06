@@ -48,6 +48,11 @@ li{
     height: 100%;
     background-color: rgb(185, 0, 185);
     color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .section-cards > .country{
     background: radial-gradient(67.44% 67.44% at 28.89% 32.56%, #BE71F0 0%, #9B38DC 100%);
@@ -260,8 +265,7 @@ li{
     column-gap: 20px;
 }
 .slider-arrow > img{
-    width: 100%;
-    height: 100%;
+    width: 10px;
 }
 #my-arrow-next, #my-arrow-next1{
     right: -30px;
@@ -591,4 +595,166 @@ main{
     -o-border-radius: 50%;
     background-color: #9B38DC;
     opacity: 1 !important;
+}
+@media screen  and (max-width: 900px){
+    .main__product-day__wrapper{
+        display: none;
+    }
+    .main__banner-slider--wrapper{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .offers-list{
+        white-space: nowrap;
+        width: fit-content;
+    }
+    .offers-nav{
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .offers-nav::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+    }
+    .main-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-info{
+        width: 90%;
+    }
+    .section-cards{
+        width: 90%;
+        margin-left: 0;
+        height: 250px;
+        margin-top: 2rem;
+    }
+    .section-cards > .section-card{
+        width: 30%;
+    }
+    .main-specifications .title{
+        display: none;
+    }
+    .specification__wrapper-card{
+        flex-direction: column;
+    }
+    .card-item__description{
+        margin-left: 0;
+        color: #000;
+        margin-top: .8rem;
+    }
+    .card-item__description > b{
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .card-item__description > br{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-info > .section-title{
+        font-size: 2.2rem;
+    }
+    .section-description{
+        font-size: 15px;
+    }
+    .section-list > li{
+        font-size: 15px;
+    }
+    #my-arrow-prev, #my-arrow-prev1{
+        left: -20px;
+        background-color: none;
+    }
+    #my-arrow-next, #my-arrow-next1{
+        right: -20px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .section-cards > .section-card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1.2rem 0;
+    }
+    .section-cards > .section-card:not(:last-child){
+        margin-bottom: 1.5rem;
+    }
+    .section-card > h2{
+        margin-top: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-right: 4px;
+    }
+    .section-card > img{
+        margin: 0 1rem 0 1.5rem;
+        width: 60px;
+        height: 60px;
+    }
+    .section-cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+    .offers__slider-item > img{
+        width: 120px;
+    }
+    .button-all{
+        display: none;
+    }
+    .main__banner-slider .wrapper-slide > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        padding: 2rem 0;
+    }
+    .main-banner__title-text{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .main__banner-slider--wrapper .slick-dots{
+        bottom: -30px;
+    }
+    .main__banner-slider .slick-dots button{
+        display: flex;
+        align-items: center;
+        height: 10px;
+    }
+    .main__banner-slider .slick-dots > li{
+        height: 12px;
+    }
+    .main__banner-slider .slick-dots > .slick-active button::before{
+        content: ' ';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #9B38DC;
+        opacity: 1 !important;
+    }
+    .main__banner-slider .slick-dots button::before{
+        content: ' ';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #E5E5E5;
+        opacity: 1 !important;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .main-specifications .wrapper-cards{
+        margin-top: 3.5rem;
+    }
 }

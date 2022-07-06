@@ -18,8 +18,10 @@
                 <div class="wrapper-slide">
                     <div>
                         <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
-                        <button class="main-banner-button">Подробнее</button>
-                        <p class="main-banner-description">* У каждого товара указанно </p>
+                        <div class="wrapper-content">
+                            <button class="main-banner-button">Подробнее</button>
+                            <p class="main-banner-description">* У каждого товара указанно </p>
+                        </div>
                     </div>
                 </div>
     
@@ -540,7 +542,37 @@
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 nextArrow: document.querySelector('#my-arrow-next'),
-				prevArrow: document.querySelector('#my-arrow-prev')
+				prevArrow: document.querySelector('#my-arrow-prev'),
+                responsive: [
+                    {
+                    breakpoint: 1260,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 426,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                    },
+                ],
             });
         });
         $(document).ready(function () {
@@ -550,7 +582,37 @@
                 slidesToShow: 6,
                 slidesToScroll: 1,
                 nextArrow: document.querySelector('#my-arrow-next1'),
-				prevArrow: document.querySelector('#my-arrow-prev1')
+				prevArrow: document.querySelector('#my-arrow-prev1'),
+                responsive: [
+                    {
+                    breakpoint: 1260,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    },
+                    },
+                    {
+                    breakpoint: 426,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                    },
+                ],
             });
         });
         $(document).ready(function () {

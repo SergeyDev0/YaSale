@@ -682,7 +682,9 @@ main{
         display: flex;
         justify-content: center;
         flex-direction: row;
-        width: 200px;
+        width: fit-content;
+        white-space: nowrap;
+        padding: 0 20px;
     }
     .specification__wrapper-card .wrapper-content > img{
         margin-right: 15px;

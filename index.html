@@ -28,32 +28,40 @@
                 <div class="wrapper-slide">
                     <div>
                         <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
-                        <button class="main-banner-button">Подробнее</button>
-                        <p class="main-banner-description">* У каждого товара указанно </p>
-                    </div>
-                </div>
-    
-                <div class="wrapper-slide">
-                    <div>
-                        <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
-                        <button class="main-banner-button">Подробнее</button>
-                        <p class="main-banner-description">* У каждого товара указанно </p>
+                        <div class="wrapper-content">
+                            <button class="main-banner-button">Подробнее</button>
+                            <p class="main-banner-description">* У каждого товара указанно </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="wrapper-slide">
                     <div>
                         <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
-                        <button class="main-banner-button">Подробнее</button>
-                        <p class="main-banner-description">* У каждого товара указанно </p>
+                        <div class="wrapper-content">
+                            <button class="main-banner-button">Подробнее</button>
+                            <p class="main-banner-description">* У каждого товара указанно </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="wrapper-slide">
                     <div>
                         <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
-                        <button class="main-banner-button">Подробнее</button>
-                        <p class="main-banner-description">* У каждого товара указанно </p>
+                        <div class="wrapper-content">
+                            <button class="main-banner-button">Подробнее</button>
+                            <p class="main-banner-description">* У каждого товара указанно </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-slide">
+                    <div>
+                        <h2 class="main-banner__title-text">Бесплатная <br> доставка*</h2>
+                        <div class="wrapper-content">
+                            <button class="main-banner-button">Подробнее</button>
+                            <p class="main-banner-description">* У каждого товара указанно </p>
+                        </div>
                     </div>
                 </div>
 
@@ -217,11 +225,11 @@
         <h2 class="section-title">Сезонное предложение</h2>
         <nav class="offers-nav">
             <ul class="offers-list">
-                <li class="active"><a href="#">Категория товаров</a></li>
-                <li><a href="#">Категория товаров</a></li>
-                <li><a href="#">Категория товаров</a></li>
-                <li><a href="#">Категория товаров</a></li>
-                <li><a href="#">Категория товаров</a></li>
+                <li class="active"><button>Категория товаров</button></li>
+                <li><button>Категория товаров</button></li>
+                <li><button>Категория товаров</button></li>
+                <li><button>Категория товаров</button></li>
+                <li><button>Категория товаров</button></li>
             </ul>
         </nav>
         <div class="wrapper-slider">
@@ -570,6 +578,16 @@
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
+                        dots: true,
+                        arrows : false,
+                    },
+                    },
+                    {
+                    breakpoint: 376,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
                     },
                     },
                 ],
@@ -610,6 +628,8 @@
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1,
+                        dots: true,
+                        arrows : false,
                     },
                     },
                 ],
@@ -637,6 +657,17 @@
                 dots: true,
             });
         });
+    </script>
+    <script>
+        let offersBtn = document.querySelectorAll('.offers-list > li > button');
+        offersBtn.forEach(s => {
+            document.querySelectorAll('.offers-list > li').forEach(m => {
+                s.addEventListener('click', function(){
+                    m.classList.remove('active');
+                    s.parentElement.classList.add('active');
+                })
+            })
+        })
     </script>
 </body>
 
